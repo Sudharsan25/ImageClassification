@@ -59,11 +59,12 @@ def download_image(download_path, url, file_name):
 	except Exception as e:
 		print('FAILED -', e)
 
-url = "https://www.google.com/search?q=Elon+musk&sxsrf=APq-WBvMjBOTVmLPZGdw3rktVZ_oC8rdzg:1648011968886&source=lnms&tbm=isch&sa=X&ved=2ahUKEwimzvb_utv2AhUVT2wGHU5RBi0Q_AUoAnoECAEQBA&biw=1536&bih=764&dpr=1."
+url = "https://www.google.com/search?q=Steve+Jobs+images&sxsrf=APq-WBs7RjdP77SyMtGlFz6A0xf2oNdThw:1648345677021&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiX1a6UluX2AhWRheYKHViSA8wQ_AUoAXoECAEQAw&biw=1536&bih=796&dpr=1.25"
 
-urls = get_images_from_google(wd, 1, 300,url)
+
+urls = get_images_from_google(wd, 1, 250,url)
 
 for i, url in enumerate(urls):
-	download_image("images/truck/", url, str(i) + ".jpg")
+	download_image("images/Steve Jobs/", url, str(i) + ".jpg")
 
 wd.quit()
