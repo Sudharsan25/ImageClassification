@@ -1,0 +1,58 @@
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10 px;
+  background-image: linear-gradient(to bottom right, #9eede2, #4428f0);
+  height: 100vh;
+}
+
+.App h3 {
+  text-align: center;
+  margin: 2rem;
+  font-size: large;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.droparea {
+  display: grid;
+  place-items: center;
+
+  width: 500px;
+  height: 400px;
+}
+
+.text {
+  border: dotted #555 3px;
+  width: 300px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.celebrity_list {
+  display: flex;
+  justify-content: space-around;
+}
+.celebrity_list img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+.celebrity_item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+.card {
+  margin-top: 1.5rem;
+}
